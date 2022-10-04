@@ -12,22 +12,31 @@
 
 <body class="bg-light">
     <header>
-        <nav>
-            <div class="d-flex bd-highlight bg-light" href="">
-                <div class="container d-flex align-items-center bd-highlight bg-light">
-                    <div class="fs-4 p-2 mx-2 bd-highlight opacity-100">Codo a Codo</div>
-                    <a class="text-decoration-none text-dark p-3 mt-2 bd-highlight opacity-75" href="">Inicio</a>
-                    <a class="text-decoration-none text-dark p-3 mt-2 bd-highlight opacity-50" href="">Link</a>
-                    <a class="text-decoration-none text-dark p-3 mt-2 bd-highlight opacity-25" href="">Desactivado</a>
-                </div>
-                <div class="container-fluid d-flex flex-row justify-content-end">
-                    <nav class="bd-highlight navbar navbar-light">
-                        <form class="d-flex form-inline d-grid gap-2">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                        </form>
-                    </nav>
-                </div>
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="d-flex align-items-baseline container-fluid">
+                    <a class="fs-4 mx-3 navbar-brand" href="#">Codo a Codo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
+                        aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="mx-3 collapse navbar-collapse show" id="navbarBasic">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="mx-2 nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mx-2 nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mx-2 nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desactivado</a>
+                            </li>
+                        </ul>
+                    </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
             </div>
         </nav>
     </header>
